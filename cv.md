@@ -35,7 +35,7 @@ function{color:blue} findLongestWord(text) {
     return (word);
 ```
 ## Education
-* Uzhhorod National University
+* Uzhgorod National University
     + Faculty of Mathematics.
 * Rs school
     + JS/FE stage 0.
