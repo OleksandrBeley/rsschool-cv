@@ -37,18 +37,68 @@ h6 {
 body {
 	min-height: 100vh;
 	display: flex;
+	font-size: 20px;
+	line-height: 1.6;
 	flex-direction: column;
-
-
+	font-family: 'Roboto', sans-serif;
 }
 
 .main {
 	flex: 1 0 auto;
 }
 
-.header {}
+
 
 .container {
 	max-width: 1440px;
 	margin: 0 auto;
 }
+
+/*-------------body------------------*/
+/*------------------header---------------------*/
+.header {
+	background-color: rgba(0, 0, 0, 0.8)
+}
+
+.header__list {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	min-height: 80px;
+	gap: 25px;
+}
+
+.header__list {
+	font-size: 16px;
+}
+
+.header__item {
+	text-decoration: none;
+	color: #ffffff;
+	cursor: pointer;
+	position: relative;
+	transition: all 0.5s ease 0s;
+}
+
+.header__item::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 1px;
+	background-color: rgb(255, 255, 255);
+	transition: all 0.5s ease 0s;
+}
+
+.header__item:hover {
+	/* color: #3b3b3b80; */
+	/* font-size: 20px; */
+}
+
+.header__item:hover::after {
+	width: 100%;
+}
+
+
+/*---------------header-end--------------------*/
