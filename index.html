@@ -21,23 +21,115 @@
 			<div class="header__menu">
 				<nav class="header__nav">
 					<ul class="header__list">
-						<li class="header__item">Contacts</li>
-						<li class="header__item">Summary</li>
-						<li class="header__item">Skills</li>
-						<li class="header__item">Code examples</li>
-						<li class="header__item">Education</li>
-						<li class="header__item">Language</li>
-						<li class="header__item">Experience</li>
+						<li class="header__item"><a href="#contacts">Contacts </a></li>
+						<li class="header__item"><a href="#summary">Summary </a></li>
+						<li class="header__item"><a href="#skills">Skills </a></li>
+						<li class="header__item"><a href="#">Code examples </a></li>
+						<li class="header__item"><a href="#">Education</a></li>
+						<li class="header__item"><a href="#">Language</a></li>
+						<li class="header__item"><a href="#">Experience</a></li>
 					</ul>
 				</nav>
 			</div>
 		</div>
 	</header>
 	<main class="main">
-		<div class="container"></div>
+		<div class="container">
+			<section class="main__about-me about-me">
+				<div class="about-me__img">
+					<img src="../assets/img/PesPatron.jpg" alt="im after work">
+				</div>
+				<div class="about-me__me me">
+					<h1 class="me__title title-me">Pes Patron</h1>
+					<h2 class="me__subtitle">your girl's favorite and savior</h2>
+				</div>
+			</section>
+			<section class="section section-contacts" id="contacts">
+				<h2 class="section__title">contacts:</h2>
+				<ul class="section__list">
+					<li class="section-contacts__item">Uzhorod, Ukraine</li>
+					<li class="section-contacts__item">Phone: +11111111111111</li>
+					<li class="section-contacts__item">E-mail: <a href="#">beleysasha12@gmail.com</a></li>
+					<li class="section-contacts__item">GitHub:<a href="https://github.com/OleksandrBeley">OleksandrBeley</a>
+					</li>
+					<li class="section-contacts__item">Telegram:<a href="https://t.me/BeleyOl">ss ss</a></li>
+				</ul>
+			</section>
+			<section class="section section-summary" id="summary">
+				<h2 class="section__title">summary</h2>
+				<p class="section-summary__text">My goal is to learn everything new and exciting. I love to code and coffee.
+					I can(love) spend a lot of time doing what interests me. My core strengths are in problem solving and
+					fast learning.I want to get knowledge and skills that will be enough for employment in a company.</p>
+			</section>
+			<section class="section section-skills" id="skills">
+				<h2 class="section-skills__title section__title">skills:</h2>
+				<ul class="section-skills__list">
+					<li class="section-skills__item">HTML</li>
+					<li class="section-skills__item">CSS ( Preprocessor SCSS, BEM methodology).</li>
+					<li class="section-skills__item">JavaScript </li>
+					<li class="section-skills__item">React JS, Redux (intermediate level knowledge).</li>
+					<li class="section-skills__item">Version control: Git (remote service GitHub).</li>
+					<li class="section-skills__item">Figma(for web development)</li>
+
+				</ul>
+			</section>
+			<section class="section section-cods">
+				<h2 class="section__title">
+					code:
+				</h2>
+				<pre class="section-cods__pre">
+					<code class="section-cods__code">
+						function{color:blue} findLongestWord(text) {
+							let words = text.split(" ");
+							let word = "";
+							// for (let i = 0; i &lt; words.length; i++) {
+							//     if (word.length &lt; words[i].length) {
+							//         word = words[i];
+							//     }
+							// }
+							for (let item of words) {
+								 if (word.length &lt; item.length) {
+									  word = item;
+								 }
+							}
+							return (word);
+					</code>
+				</pre>
+			</section>
+			<section class="section section-Education">
+				<h2 class="section__title">Education:</h2>
+				<ul class="section-Education__list">
+					<li class="section-Education__item">Uzhgorod National University
+						Faculty of Mathematics.</li>
+					<li class="section-Education__item">Rs school
+						JS/FE stage 0</li>
+
+				</ul>
+			</section>
+			<section class="section section-language">
+				<h2 class="section__title">Language:</h2>
+				<ul class="section-language__list">
+					<li class="section-language__item">Ukraine
+					</li>
+					<li class="section-language__item">English</li>
+				</ul>
+			</section>
+			<section class="section section-expiriance">
+				<h2 class="section__title">experience:</h2>
+				<p class="section-expiriance__text">I have experience in layout of educational projects</p>
+			</section>
+		</div>
 	</main>
 	<footer class="footer">
-		<div class="container"></div>
+		<div class="container">
+			<div class="footer__body">
+				© 2022
+				<a class="footer__link" href="https://github.com/OleksandrBeley">OleksandrBeley</a>
+				<div class="footer__logo">
+					<a href="https://rs.school/"><img src="/assets/img/rs_school-og.png" alt="logo"></a>
+				</div>
+			</div>
+		</div>
 	</footer>
 </body>
 
